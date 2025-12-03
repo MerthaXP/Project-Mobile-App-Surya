@@ -5,17 +5,17 @@ import { colors } from '../constants/colors';
 const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
-      {/* Header Sederhana */}
+      {/* header sederhana */}
       <View style={styles.header}>
         <Text style={styles.greeting}>Halo, Admin!</Text>
         <Text style={styles.subtitle}>Selamat datang di Inventaris Barang</Text>
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
-        {/* Kartu Ringkasan (Statistik Sederhana) */}
+        {/* kartu ringkasan (statistik sederhana) */}
         <View style={styles.summaryCard}>
           <Text style={styles.summaryTitle}>Total Barang</Text>
-          <Text style={styles.summaryValue}>150</Text>
+          <Text style={styles.summaryValue}>45</Text>
           <Text style={styles.summaryLabel}>Items</Text>
         </View>
 
@@ -30,7 +30,7 @@ const HomeScreen = ({ navigation }: any) => {
           </View>
         </View>
 
-        {/* Shortcut ke Input Screen */}
+        {/* shortcut ke input screen */}
         <TouchableOpacity 
           style={styles.actionButton}
           onPress={() => navigation.navigate('Input')}

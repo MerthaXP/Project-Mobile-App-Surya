@@ -7,11 +7,13 @@ const ProfileScreen = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.avatarContainer}>
+          
           <Image 
-             // Placeholder gambar profil
-            source={{ uri: 'https://via.placeholder.com/150' }} 
+            source={require('../assets/images/profile.png')} 
             style={styles.avatar} 
+            resizeMode="cover" 
           />
+          
         </View>
         <Text style={styles.name}>Admin Gudang</Text>
         <Text style={styles.role}>Staff Logistik</Text>
@@ -60,7 +62,7 @@ const styles = StyleSheet.create({
   avatar: {
     width: 100,
     height: 100,
-    borderRadius: 50,
+    borderRadius: 50, 
     backgroundColor: colors.lightGray,
   },
   name: {

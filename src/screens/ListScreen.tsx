@@ -2,8 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList, Image } from 'react-native';
 import { colors } from '../constants/colors';
 
-// Import komponen CardBarang Anda di sini jika sudah ada
-// import CardBarang from '../components/CardBarang';
 
 // Data Dummy untuk visualisasi
 const dummyData = [
@@ -16,7 +14,7 @@ const dummyData = [
 const ListScreen = () => {
   // Render Item function
   const renderItem = ({ item }: { item: any }) => (
-    // Ganti bagian View ini dengan <CardBarang /> Anda nanti
+    // Ganti bagian view ini dengan <CardBarang /> anda nanti
     <View style={styles.card}>
       <View style={styles.cardIcon}>
         <Text style={styles.iconText}>{item.name.charAt(0)}</Text>
@@ -70,7 +68,7 @@ const styles = StyleSheet.create({
   listContent: {
     padding: 20,
   },
-  // Style Card Dummy
+  // style card dummy
   card: {
     flexDirection: 'row',
     backgroundColor: colors.white,
